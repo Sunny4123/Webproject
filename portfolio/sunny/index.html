@@ -36,7 +36,36 @@ https://www.tooplate.com/view/2115-marvel
         </div>
       </div>
     <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="rain">
+          <span style="--i:40"></span>
+          <span style="--i:60"></span>
+          <span style="--i:55"></span>
+          <span style="--i:110"></span>
+          <span style="--i:75"></span>
+          <span style="--i:35"></span>
+          <span style="--i:64"></span>
+          <span style="--i:45"></span>
+          <span style="--i:102"></span>
+          <span style="--i:35"></span>
+          <span style="--i:40"></span>
+          <span style="--i:55"></span>
+          <span style="--i:65"></span>
+          <span style="--i:115"></span>
+          <span style="--i:39"></span>
+          <span style="--i:85"></span>
+          <span style="--i:55"></span>
+          <span style="--i:80"></span>
+          <span style="--i:120"></span>
+          <span style="--i:43"></span>
+          <span style="--i:60"></span>
+          <span style="--i:55"></span>
+          <span style="--i:140"></span>
+          <span style="--i:57"></span>
+          <span style="--i:105"></span>
+          <span style="--i:28"></span>
+     </div>
+     <div class="display">
+      <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Sun</a>
 
@@ -224,7 +253,6 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-lg-6 col-12">
                   <h2 class="mb-4 mobile-mt-2">Educations</h2>
-
                     <div class="timeline">
                         <div class="timeline-wrapper">
                              <div class="timeline-yr">
@@ -315,12 +343,11 @@ https://www.tooplate.com/view/2115-marvel
      <footer class="footer py-5">
           <div class="container">
                <div class="row">
-
-                
-                    
                </div>
           </div>
      </footer>
+     </div>
+   
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -331,10 +358,13 @@ https://www.tooplate.com/view/2115-marvel
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
      <script>
-      
+        let display = document.querySelector('body');
         window.addEventListener('scroll',()=>{
-            if(window.scrollY == 0){
-            console.log(screenY);
+          if(window.scrollY == 0){
+            console.log(display);
+            //display.classList.add('dark-mode');
+        }else{
+          //display.classList.remove('dark-mode');
         }
         });
         

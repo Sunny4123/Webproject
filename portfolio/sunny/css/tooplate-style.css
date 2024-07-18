@@ -358,14 +358,6 @@ b, strong {
   max-width: 432px;
   margin-left: 6em;
 }
-.timeline-info small {
-  color: #474559;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-}
 
 .owl-carousel .owl-nav span {
   display: none;
@@ -612,4 +604,56 @@ b, strong {
   margin-left: 16px;
   background: #ff695f;
   border-radius: 50%;
+}
+.displaynon{
+  display: none;
+}
+.rain{
+  position: absolute;
+  display: flex;
+  top: -100px;
+  z-index: 0;
+}
+.rain span{
+  position: relative;
+  width: 3px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  opacity: 100%;
+  margin: 0 31px;
+  border-radius: 50%;
+  animation-name: animate;
+  animation-delay: calc(500s/var(--i));
+  animation-duration: calc(3000s/var(--i));
+  animation-iteration-count: infinite;
+  
+}
+.dark-mode .rain span{
+  position: relative;
+  width: 3px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  opacity: 100%;
+  margin: 0 25px;
+  border-radius: 50%;
+  animation-name: animate;
+  animation-delay: calc(500s/var(--i));
+  animation-duration: calc(3000s/var(--i));
+  animation-iteration-count: infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+      transform: translateY(0px)scale(1);
+      animation-timing-function: ease-out;
+  } 
+  50%{
+      transform: translateY(1400px)scale(1);
+      animation-timing-function: ease-out;
+  }
+  100%{
+      transform: translateY(3800px)scale(1);
+      animation-timing-function: ease-in; 
+  }
 }
