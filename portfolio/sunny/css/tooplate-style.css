@@ -648,10 +648,6 @@ b, strong {
       transform: translateY(0px)scale(1);
       animation-timing-function: ease-out;
   } 
-  50%{
-      transform: translateY(1400px)scale(1);
-      animation-timing-function: ease-out;
-  }
   100%{
       transform: translateY(3800px)scale(1);
       animation-timing-function: ease-in; 
